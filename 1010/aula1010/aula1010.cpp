@@ -15,14 +15,24 @@ int Soma2Valores(int a, int b)
 	return c;
 }
 
+int LerValorInteiro()
+{
+	int variavel;
+	printf("\nDigite um valor: ");
+	scanf_s("%i", &variavel);
+	return variavel;
+}
+
 int main()
 {
 	HelloWorld();
-	int d = Soma2Valores(99, 101);
 
-	printf("Resultado: %i\n", d);
+	int primeiroValor = LerValorInteiro();
+	int segundoValor = LerValorInteiro();
 
+	int resultado = Soma2Valores(primeiroValor, segundoValor);
+	printf("Resultado: %i\n\n", resultado);
 	system("pause");
-    return 0;
+	return 0;
 }
 
