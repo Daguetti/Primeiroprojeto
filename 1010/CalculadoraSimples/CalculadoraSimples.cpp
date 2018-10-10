@@ -4,55 +4,55 @@
 #include "stdafx.h"
 #include <stdlib.h>
 
-int Soma(int a, int b)
+float Soma(float a, float b)
 {
-	int c;
+	float c;
 	c = a + b;
 	return c;
 }
 
-int Subtracao(int a, int b)
+float Subtracao(float a, float b)
 {
-	int c;
+	float c;
 	c = a - b;
 	return c;
 }
 
-int Multiplicacao(int a, int b)
+float Multiplicacao(float a, float b)
 {
-	int c;
+	float c;
 	c = a * b;
 	return c;
 }
 
-int Divisao(int a, int b)
+float Divisao(float a, float b)
 {
-	int c;
+	float c;
 	c = a / b;
 	return c;
 }
 
-int LendoValores()
+float LendoValores()
 {
-	int variavel;
+	float variavel;
 	printf("\nDigite um valor: \n");
 	scanf_s("%f", &variavel);
 	return variavel;
 }
 
-int main()
+float main()
 {
-	int primeiroValor = LendoValores();
-	int segundoValor = LendoValores();
+	float primeiroValor = LendoValores();
+	float segundoValor = LendoValores();
 
-	int soma = Soma(primeiroValor, segundoValor);
-	printf("\nResultado da soma dos valores: %f", soma);
-	int subtracao = Subtracao(primeiroValor, segundoValor);
-	printf("\nResultado da subtracao dos valores: %f", subtracao);
-	int multiplicacao = Multiplicacao(primeiroValor, segundoValor);
-	printf("\nResultado da multiplicacao dos valores: %f", multiplicacao);
-	int divisao = Divisao(primeiroValor, segundoValor);
-	printf("\nResultado da divisao dos valores: %f\n", divisao);
+	float resultado = Soma(primeiroValor, segundoValor);
+	printf("\nResultado da soma dos valores: %f", resultado);
+	resultado = Subtracao(primeiroValor, segundoValor);
+	printf("\nResultado da subtracao dos valores: %f", resultado);
+	resultado = Multiplicacao(primeiroValor, segundoValor);
+	printf("\nResultado da multiplicacao dos valores: %f", resultado);
+	resultado = Divisao(primeiroValor, segundoValor);
+	printf("\nResultado da divisao dos valores: %f\n", resultado);
 	system("pause");
     return 0;
 }
