@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aula1010", "aula1010\aula10
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalculadoraSimples", "CalculadoraSimples\CalculadoraSimples.vcxproj", "{7883CF8C-C882-46B1-8243-AB2107ABAB88}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aula1710", "aula1710\aula1710.vcxproj", "{E8D5175D-5C9D-40A4-AD29-1D30138A8292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7883CF8C-C882-46B1-8243-AB2107ABAB88}.Release|x64.Build.0 = Release|x64
 		{7883CF8C-C882-46B1-8243-AB2107ABAB88}.Release|x86.ActiveCfg = Release|Win32
 		{7883CF8C-C882-46B1-8243-AB2107ABAB88}.Release|x86.Build.0 = Release|Win32
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Debug|x64.ActiveCfg = Debug|x64
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Debug|x64.Build.0 = Debug|x64
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Debug|x86.Build.0 = Debug|Win32
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Release|x64.ActiveCfg = Release|x64
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Release|x64.Build.0 = Release|x64
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Release|x86.ActiveCfg = Release|Win32
+		{E8D5175D-5C9D-40A4-AD29-1D30138A8292}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
