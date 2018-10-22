@@ -45,20 +45,47 @@ void IVMQM(float a, float b, float c, float d)
 		printf("\n%.2f \n", d);}
 }
 
+void ExemploSwitch()
+{
+	printf("\nEscolha uma opcao: \n");
+	printf("1 - a\n2 - b\n3 - c\n4 - d\n");
+	int op = 0;
+	scanf_s("%i", &op);
+	switch (op)
+	{
+	case 1:
+		printf("Voce escolheu a\n");
+		break;
+	case 2:
+		printf("Voce escolheu b\n");
+		break;
+	case 3:
+		printf("Voce escolheu c\n");
+		break;
+	case 4:
+		printf("Voce escolheu d\n");
+		break;
+	default:
+		printf("opcao invalida\n");
+		break;
+	}
+}
+
 int main(){
-	//int primeiro = LendoValores();
-	//int segundo = LendoValores();
-	//int terceiro = LendoValores();
-	//int quarto = LendoValores();
-	//int m = MVI(primeiro, segundo, terceiro, quarto);
-	//printf("\nO maior valor encontrado foi: %i\n", m);
+	/*int primeiro = LendoValores();
+	int segundo = LendoValores();
+	int terceiro = LendoValores();
+	int quarto = LendoValores();
+	int m = MVI(primeiro, segundo, terceiro, quarto);
+	printf("\nO maior valor encontrado foi: %i\n", m);
 
 	float primeiroReal = LVR();
 	float segundoReal = LVR();
 	float terceiroReal = LVR();
 	float quartoReal = LVR();
 
-	IVMQM(primeiroReal, segundoReal, terceiroReal, quartoReal);
+	IVMQM(primeiroReal, segundoReal, terceiroReal, quartoReal);*/
+	ExemploSwitch();
 
 	system("pause");
     return 0;}
