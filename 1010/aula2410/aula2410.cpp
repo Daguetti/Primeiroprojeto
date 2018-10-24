@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include <stdlib.h>
+#include <stdio.h>
 /*void Switch2(){
 	printf("\nDigite um numero inteiro: \n");
 	int n = 0;
@@ -21,7 +22,7 @@
 	case 4:
 		printf("O resto da divisao de %i por 5 eh %i", n, resto);
 		break;}}*/
-void imposto(){
+/*void imposto(){
 	float s = 0;
 	printf("Digite seu salario (utilizando ponto '.' para separar os centavos): \n");
 	scanf_s("%f", &s);
@@ -38,8 +39,30 @@ void imposto(){
 		printf("Imposto devido: R$%.2f\n", t3);}
 	else{
 		float t4 = (s * 0.275) - 869.36;
-		printf("Imposto devido: R$%.2f\n", t4);}}
+		printf("Imposto devido: R$%.2f\n", t4);}}*/
+void Exercicio() {
+	int pn = 0;
+	printf("Digite um numero inteiro: \n");
+	scanf_s("%i", &pn);
+	int sn = 0;
+	printf("Digite outro numero inteiro maior que o primeiro: \n");
+	scanf_s("%i", &sn);
+	do
+	{
+		printf("%i\n", pn);
+		pn++;
+	} while (pn <= sn);
+}
 int main(){
+
+	/*loop infinito
+	while (true)
+	{
+		printf("aaa\n");
+	}*/
+
+
+	Exercicio();
 	//Switch2();
-	imposto();
+	//imposto();
 	system("pause");}
