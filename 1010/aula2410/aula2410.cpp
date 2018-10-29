@@ -40,29 +40,68 @@
 	else{
 		float t4 = (s * 0.275) - 869.36;
 		printf("Imposto devido: R$%.2f\n", t4);}}*/
-void Exercicio() {
+/*void Exercicio() {
 	int pn = 0;
 	printf("Digite um numero inteiro: \n");
 	scanf_s("%i", &pn);
 	int sn = 0;
-	printf("Digite outro numero inteiro maior que o primeiro: \n");
+	printf("Digite outro numero inteiro: \n");
 	scanf_s("%i", &sn);
-	do
-	{
-		printf("%i\n", pn);
-		pn++;
-	} while (pn <= sn);
+	printf("Os numeros entre os valores digitados sao:\n");
+	if (pn > sn) {
+		do
+		{
+			printf("\t%i\n", pn);
+			pn--;
+		} while (pn >= sn);
+	}
+	else {
+		do
+		{
+			printf("\t%i\n", pn);
+			pn++;
+		} while (pn <= sn);
+	}
+}*/
+int LendoValor() {
+	int valor = 0;
+	printf("Digite um numero inteiro: \n");
+	scanf_s("%d", &valor);
+	return valor;
 }
-int main(){
+void Exercicio2() {
 
-	/*loop infinito
-	while (true)
+	/*int n1 = LendoValor();
+	printf("%d", n1);*/
+
+	int numero = 0;
+	int anterior = 0;
+	int crescente = 1;
+	int i = 0;
+	while (i < 5)
 	{
-		printf("aaa\n");
-	}*/
+		numero = LendoValor();
+
+		if (i != 0)
+		{
+			if (anterior > numero)
+			{
+				crescente = 0;
+			}
+		}
+		anterior = numero;
+		i++;
+	}
+}
+int main() {
 
 
-	Exercicio();
+
+	//Exercicio();
+	//LendoValor();
+	Exercicio2();
 	//Switch2();
 	//imposto();
-	system("pause");}
+	system("pause");
+	return 0;
+}
